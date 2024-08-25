@@ -1,0 +1,28 @@
+* {
+    font-family: Arial;
+
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    padding-top: 50px;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top img {
+    background-color: red;
+}
+
+.top h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.top h2 {
+    font-size: 1.5rem;
+}
