@@ -1,5 +1,14 @@
 nav {
-    margin: 25px 0;
+    padding: 25px 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+}
+
+nav .pages {
     width: 500px;
     max-width: 100%;
 
@@ -8,7 +17,7 @@ nav {
     justify-content: space-between;
 }
 
-nav a {
+nav .pages a {
     color: black;
 
     font-size: 1.25rem;
@@ -19,7 +28,7 @@ nav a {
     position: relative;
 }
 
-nav a::after {
+nav .pages a::after {
     position: absolute;
     content: "";
     bottom: 0;
@@ -32,11 +41,11 @@ nav a::after {
     transition: all 0.5s;
 }
 
-nav a:hover::after {
+nav .pages a:hover::after {
     width: 100%;
 }
 
-nav a.active::after {
+nav .pages a.active::after {
     background-color: black;
     width: 100%;
 }

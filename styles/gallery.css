@@ -9,4 +9,11 @@ main .gallery img {
     height: 300px;
     object-fit: cover;
     background-color: blue;
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    main .gallery img {
+        height: 200px;
+    }
 }
