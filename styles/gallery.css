@@ -1,0 +1,12 @@
+main .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+main .gallery img {
+    height: 300px;
+    object-fit: cover;
+    background-color: blue;
+}

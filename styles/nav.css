@@ -1,6 +1,7 @@
 nav {
     margin: 25px 0;
     width: 500px;
+    max-width: 100%;
 
     display: flex;
     align-items: center;
