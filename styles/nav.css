@@ -1,3 +1,41 @@
 nav {
-    margin: 20px 0;
+    margin: 25px 0;
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+
+    font-size: 1.25rem;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+nav a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    background-color: grey;
+
+    transition: all 0.5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a.active::after {
+    background-color: black;
+    width: 100%;
 }
