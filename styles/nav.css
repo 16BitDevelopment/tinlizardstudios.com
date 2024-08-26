@@ -4,6 +4,7 @@ nav {
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
     background-color: white;
 }
@@ -48,4 +49,75 @@ nav .pages a:hover::after {
 nav .pages a.active::after {
     background-color: black;
     width: 100%;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav i {
+    font-size: 30px;
+}
+
+nav label.x-icon {
+    display: none;
+}
+
+#navbar-active {
+    display: none;
+}
+
+#navbar-active:checked {
+    display: block;
+    height: 80px;
+    width: 100%;
+    opacity: 0;
+}
+
+#navbar-active:checked ~ nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: block;
+
+    padding: 25px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+#navbar-active:checked ~ nav .pages {
+    margin-top: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+}
+
+#navbar-active:checked ~ nav .hamburger label.hamburger-icon {
+    display: none;
+}
+
+#navbar-active:checked ~ nav label.x-icon {
+    display: block;
+}
+
+@media (max-width: 500px) {
+    nav {
+        justify-content: end;
+    }
+
+    nav .pages {
+        display: none;
+    }
+
+    nav .hamburger {
+        display: block;
+        margin-right: 25px;
+    }
 }

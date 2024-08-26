@@ -9,18 +9,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+        <script src="https://kit.fontawesome.com/9055024f82.js" crossorigin="anonymous"></script>
+
         <link rel="stylesheet" href="/styles/general.css">
         <link rel="stylesheet" href="/styles/nav.css">
         <link rel="stylesheet" href="/styles/gallery.css">
     </head>
     <body>
         <div class="top">
-            <img src="" alt="Logo">
+            <img src="https://mikekim.com/wp-content/uploads/2017/01/logo-here.png" alt="Logo">
             <h1>Tin Lizard Studios</h1>
             <h2>"Quote Goes Here"</h2>
         </div>
 
+        <input type="checkbox" id="navbar-active">
         <nav>
+            <label for="navbar-active" class="x-icon">
+                <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+            </label>
             <div class="pages">
                 <a href="/">Home</a>
                 <a href="#" class="active">Gallery</a>
@@ -28,19 +34,39 @@
                 <a href="/blog">Blog</a>
                 <a href="/contact">Contact</a>
             </div>
+            <div class="hamburger">
+                <label for="navbar-active" class="hamburger-icon">
+                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                </label>
+            </div>
         </nav>
 
         <main>
-            <h1>Gallery</h1>
             <div class="gallery">
-                <img src="https://images.unsplash.com/photo-1723755952827-54aadfcd8bcf?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo1">
-                <img src="https://images.unsplash.com/photo-1723744895444-e94a0e1dd378?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo2">
-                <img src="https://images.unsplash.com/photo-1723844944367-9332e405fd6c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8" alt="Photo3">
-                <img src="https://images.unsplash.com/photo-1723924671047-788dca3e7f58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" alt="Photo4">
-                <img src="https://plus.unsplash.com/premium_photo-1695339147223-45c4218c9986?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt="Photo5">
-                <img src="https://images.unsplash.com/photo-1724221145933-e12d689a3708?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="Photo6">
-                <img src="https://images.unsplash.com/photo-1723718283396-01bc394cdf5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="Photo7">
-                <img src="https://images.unsplash.com/photo-1724454216479-340fff563a19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="Photo8">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1723755952827-54aadfcd8bcf?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo1">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1723744895444-e94a0e1dd378?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo2">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1723844944367-9332e405fd6c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8" alt="Photo3">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1723924671047-788dca3e7f58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" alt="Photo4">
+                </div>
+                <div>
+                    <img src="https://plus.unsplash.com/premium_photo-1695339147223-45c4218c9986?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt="Photo5">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1724221145933-e12d689a3708?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="Photo6">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1723718283396-01bc394cdf5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="Photo7">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1724454216479-340fff563a19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="Photo8">
+                </div>
             </div>
         </main>
     </body>

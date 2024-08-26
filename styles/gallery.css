@@ -5,15 +5,33 @@ main .gallery {
     justify-content: center;
 }
 
-main .gallery img {
+main .gallery div {
     height: 300px;
-    object-fit: cover;
     background-color: blue;
     overflow: hidden;
+
+    border-radius: 10px;
+}
+
+main .gallery div img {
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 0.25s;
+}
+
+main .gallery div img:hover {
+    scale: 1.25;
 }
 
 @media (max-width: 1000px) {
-    main .gallery img {
+    main .gallery div {
         height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    main .gallery div {
+        height: 150px;
     }
 }

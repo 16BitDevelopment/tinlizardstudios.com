@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: grey;
+    background-color: #eeeeee;
 }
 
 .top {
@@ -19,9 +19,11 @@ body {
 
 .top img {
     margin: 25px 0;
+    height: 100px;
 }
 
 .top h1 {
+    width: 100%;
     font-size: 3.5rem;
     text-transform: uppercase;
 
@@ -32,4 +34,8 @@ body {
 
 .top h2 {
     font-size: 1rem;
+}
+
+main {
+    margin-top: 50px;
 }
