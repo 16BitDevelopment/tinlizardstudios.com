@@ -67,15 +67,19 @@ nav label.x-icon {
     display: none;
 }
 
-#navbar-active:checked {
+.tmp-nav {
+    display: none;
+}
+
+#navbar-active:checked ~ .tmp-nav {
     display: block;
     height: 80px;
     width: 100%;
-    opacity: 0;
+    background-color: white;
 }
 
 #navbar-active:checked ~ nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -84,9 +88,12 @@ nav label.x-icon {
     display: block;
 
     padding: 25px;
-
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+
+    pointer-events: all;
+
+    animation: openNav 0.25s forwards;
 }
 
 #navbar-active:checked ~ nav .pages {
@@ -105,6 +112,16 @@ nav label.x-icon {
 
 #navbar-active:checked ~ nav label.x-icon {
     display: block;
+}
+
+@keyframes openNav {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 500px) {
