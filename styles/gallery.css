@@ -6,8 +6,7 @@ main .gallery {
 }
 
 main .gallery div {
-    height: 300px;
-    background-color: blue;
+    height: 250px;
     overflow: hidden;
 
     border-radius: 10px;
@@ -21,12 +20,12 @@ main .gallery div img {
 }
 
 main .gallery div img:hover {
-    scale: 1.25;
+    scale: 1.15;
 }
 
 @media (max-width: 1000px) {
     main .gallery div {
-        height: 200px;
+        height: 275px;
     }
 }
 

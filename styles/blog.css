@@ -1,0 +1,116 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+}
+
+main .feed {
+    width: 100vw;
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+
+    padding: 50px 25px;
+
+    min-height: calc(100vh - 50px);
+
+    box-sizing: border-box;
+}
+
+main .post {
+    background-color: var(--colour2);
+
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+main .post h1 {
+    font-size: 3rem;
+}
+
+main .post h2 {
+    font-size: 1rem;
+}
+
+main .post p {
+    font-size: 1rem;
+}
+
+main .post .preview {
+    box-sizing: border-box;
+    width: 100%;
+
+    border-radius: 10px;
+
+    margin: 15px 0;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: var(--colour1);
+}
+
+main .post .preview button {
+    border: 2px solid var(--colour5);
+
+    font-size: 20px;
+    height: 50px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition: all 0.15s;
+}
+
+main .post .preview button:hover {
+    background-color: var(--colour5);
+}
+
+main .post .preview button:hover i {
+    color: var(--colour1);
+}
+
+main .post .preview .images {
+    width: 75%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+main .post .preview .images img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: all 0.25s;
+}
+
+main .post .preview .images img.active {
+    opacity: 1;
+}
