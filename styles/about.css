@@ -5,6 +5,10 @@ main {
     flex-wrap: wrap;
 }
 
+main .text p {
+    max-width: 400px;
+}
+
 main .image {
     background-color: var(--colour1);
     width: 300px;
