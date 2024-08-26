@@ -3,14 +3,22 @@
 
     margin: 0;
     padding: 0;
+
+    --colour1: #fff;
+    --colour2: #f7f7f7;
+    --colour3: #eeeeee;
+    --colour4: #808080;
+    --colour5: #000;
+
+    color: var(--colour5);
 }
 
 body {
-    background-color: #eeeeee;
+    background-color: var(--colour3);
 }
 
 .top {
-    background-color: white;
+    background-color: var(--colour1);
 
     display: flex;
     flex-direction: column;
@@ -24,18 +32,64 @@ body {
 
 .top h1 {
     width: 100%;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-
-    margin-bottom: 5px;
+    font-size: 3.75rem;
 
     text-align: center;
 }
 
 .top h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.top h3 {
     font-size: 1rem;
 }
 
 main {
     margin-top: 50px;
+    width: 100%;
+
+    padding: 150px;
+
+    box-sizing: border-box;
+}
+
+main h1 {
+    font-size: 3rem;
+
+    margin-bottom: 50px;
+}
+
+main p {
+    font-size: 1.25rem;
+}
+
+.bottom {
+    width: 100%;
+    height: 150px;
+    background-color: var(--colour1);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom .socials {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom .socials i {
+    font-size: 1.5rem;
+
+    transition: all 0.25s;
+}
+
+.bottom .socials i:hover {
+    scale: 1.2;
+}
+
+.bottom .copyright {
+    font-weight: 500;
 }

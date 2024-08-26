@@ -1,0 +1,42 @@
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .text p {
+    margin-bottom: 35px;
+}
+
+main .text .socials {
+    display: flex;
+    justify-content: space-around;
+
+    width: 200px;
+}
+
+main .text .socials i {
+    font-size: 3rem;
+
+    transition: all 0.25s;
+}
+
+main .text .socials i:hover {
+    transform: scale(1.25) rotateZ(6deg);
+}
+
+main .image {
+    width: 300px;
+    aspect-ratio: 5/7;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background-color: var(--colour1);
+}
+
+main .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

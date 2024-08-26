@@ -6,7 +6,9 @@ nav {
     justify-content: center;
     align-items: center;
 
-    background-color: white;
+    background-color: var(--colour1);
+
+    box-shadow: 0 6px 5px #00000026
 }
 
 nav .pages {
@@ -19,8 +21,6 @@ nav .pages {
 }
 
 nav .pages a {
-    color: black;
-
     font-size: 1.25rem;
 
     text-decoration: none;
@@ -37,7 +37,7 @@ nav .pages a::after {
     right: 0;
     height: 2px;
     width: 0%;
-    background-color: grey;
+    background-color: var(--colour4);
 
     transition: all 0.5s;
 }
@@ -47,7 +47,7 @@ nav .pages a:hover::after {
 }
 
 nav .pages a.active::after {
-    background-color: black;
+    background-color: var(--colour5);
     width: 100%;
 }
 
@@ -75,7 +75,9 @@ nav label.x-icon {
     display: block;
     height: 80px;
     width: 100%;
-    background-color: white;
+    background-color: var(--colour1);
+
+    box-shadow: 0 6px 5px #00000026
 }
 
 #navbar-active:checked ~ nav {
@@ -88,7 +90,7 @@ nav label.x-icon {
     display: block;
 
     padding: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #ffffff80;
     backdrop-filter: blur(5px);
 
     pointer-events: all;

@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    justify-content: space-around;
+
+    gap: 50px;
+}
+
+main .image {
+    background-color: var(--colour1);
+    width: 300px;
+    aspect-ratio: 5/7;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
