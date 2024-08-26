@@ -53,16 +53,18 @@ main {
     padding: 150px;
 
     box-sizing: border-box;
+
+    font-size: 1rem;
 }
 
 main h1 {
-    font-size: 3rem;
+    font-size: 3em;
 
     margin-bottom: 50px;
 }
 
 main p {
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 .bottom {
@@ -92,4 +94,18 @@ main p {
 
 .bottom .copyright {
     font-weight: 500;
+}
+
+@media (max-width: 750px) {
+    main {
+        font-size: 0.75rem;
+        padding: 50px;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        font-size: 0.6rem;
+        padding: 40px;
+    }
 }

@@ -90,12 +90,10 @@ nav label.x-icon {
     display: block;
 
     padding: 25px;
-    background-color: #ffffff80;
-    backdrop-filter: blur(5px);
-
-    pointer-events: all;
-
+    background-color: #fff;
     animation: openNav 0.25s forwards;
+
+    z-index: 100;
 }
 
 #navbar-active:checked ~ nav .pages {
