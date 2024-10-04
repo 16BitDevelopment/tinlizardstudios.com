@@ -112,13 +112,13 @@ main .available h1 {
 }
 
 @media (max-width: 1000px) {
-    main .gallery div {
-        height: 275px;
+    main .gallery .painting {
+        height: 200px;
     }
 }
 
 @media (max-width: 500px) {
-    main .gallery div {
+    main .gallery .painting {
         height: 150px;
     }
 }
