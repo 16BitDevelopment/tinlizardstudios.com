@@ -31,7 +31,7 @@ main .gallery .painting.fullscreen {
 
     z-index: 999;
 
-    transition: all 0.5s;
+    animation: show 0.5s forwards;
 }
 
 main .gallery .painting .close i {
@@ -120,5 +120,15 @@ main .available h1 {
 @media (max-width: 500px) {
     main .gallery div {
         height: 150px;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
