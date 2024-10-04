@@ -17,6 +17,10 @@ body {
     background-color: var(--colour3);
 }
 
+body.noscroll {
+    overflow: hidden;
+}
+
 .top {
     background-color: var(--colour1);
 

@@ -5,7 +5,7 @@ main .gallery {
     justify-content: center;
 }
 
-main .gallery div {
+main .gallery .painting {
     height: 250px;
     overflow: hidden;
 
@@ -14,7 +14,50 @@ main .gallery div {
     border-radius: 10px;
 }
 
-main .gallery div::after {
+main .gallery .painting.fullscreen {
+    position: fixed;
+    inset: 0;
+    height: calc(100% - 100px);
+
+    padding: 50px;
+
+    background-color: #00000080;
+
+    border-radius: unset;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+
+    transition: all 0.5s;
+}
+
+main .gallery .painting .close i {
+    display: none;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    font-size: 3rem;
+    color: var(--colour1);
+
+    pointer-events: all;
+
+    transition: all 0.25s;
+}
+
+main .gallery .painting .close i:hover {
+    scale: 1.1;
+}
+
+main .gallery .painting.fullscreen .close i {
+    display: block;
+}
+
+main .gallery .painting::after {
     content: attr(data-name);
 
     position: absolute;
@@ -36,21 +79,32 @@ main .gallery div::after {
     transition: all 0.25s;
 }
 
-main .gallery div:hover::after {
+main .gallery .painting:hover::after {
     opacity: 1;
     translate: 0;
 }
 
-main .gallery div img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+main .gallery .painting.fullscreen::after {
+    opacity: 1;
+    translate: 0;
+    background-color: transparent;
+
+    z-index: -1;
+}
+
+main .gallery .painting img {
+    max-height: 100%;
+    max-width: 100%;
 
     transition: all 0.25s;
 }
 
-main .gallery div:hover img {
+main .gallery .painting:hover img {
     scale: 1.1;
+}
+
+main .gallery .painting.fullscreen:hover img {
+    scale: 1;
 }
 
 main .available h1 {
