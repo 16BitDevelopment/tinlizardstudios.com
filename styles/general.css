@@ -47,6 +47,8 @@ body.noscroll {
 .top h2 {
     font-size: 1rem;
     margin-bottom: 15px;
+
+    font-family: serif;
 }
 
 .top h3 {
