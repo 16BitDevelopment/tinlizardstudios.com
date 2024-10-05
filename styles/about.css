@@ -1,6 +1,6 @@
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 50px;
     flex-wrap: wrap;
 }
