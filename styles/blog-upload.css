@@ -38,7 +38,16 @@ form .form-group input {
     outline: none;
 }
 
-form button {
+form .form-submit-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    width: 500px;
+    max-width: 100%;
+}
+
+form .form-submit-group button {
     padding: 0.5em 1.5em;
     font-size: 1em;
 
@@ -50,7 +59,33 @@ form button {
     transition: all 0.25s;
 }
 
-form button:hover {
+form .form-submit-group button:hover {
     background-color: var(--colour5);
     color: var(--colour1);
+}
+
+form .form-submit-group.sent {
+    pointer-events: none;
+}
+
+form .form-submit-group .msg {
+    display: none;
+    font-size: 1rem;
+}
+
+form .form-submit-group .sent {
+    color: green;
+}
+
+form .form-submit-group .error {
+
+    color: red;
+}
+
+form .form-submit-group.sent .sent {
+    display: block;
+}
+
+form .form-submit-group.error .error {
+    display: block;
 }

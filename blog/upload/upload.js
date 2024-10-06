@@ -1,18 +1,37 @@
-function sendMail() {
+const formEl = document.getElementById("form");
+const paraInput = document.getElementById("para");
+const subjectInput = document.getElementById("subject");
+const submitGroup = document.getElementById("submit-group");
+
+
+
+formEl.onsubmit = (function(e) {
+    e.preventDefault();
+
+    if (paraInput.value == "" || subjectInput.value == "") {
+        return;
+    }
+
     const dateNow = new Date();
 
     let params = {
-        subject: document.getElementById("subject").value,
+        subject: subjectInput.value,
         date: (dateNow.getDate() + "/" + dateNow.getMonth() + "/" + dateNow.getFullYear()).toString(),
-        para: document.getElementById("para").value
+        para: paraInput.value
     };
 
     emailjs.send("service_ffh1rdf", "template_6su3fl4", params).then(
         (response) => {
-            alert("Email Sent");
+            submitGroup.classList.add("sent");
+
+            paraInput.value == "";
+            subjectInput.value == "";
         },
         (error) => {
-            alert("Email Send Failure", error);
+            submitGroup.classList.add("error");
+
+            paraInput.value == "";
+            subjectInput.value == "";
         }
     );
-}
+});
