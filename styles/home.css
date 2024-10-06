@@ -12,3 +12,7 @@
 
     filter: blur(2px);
 }
+
+main p {
+    margin-bottom: 50px;
+}
