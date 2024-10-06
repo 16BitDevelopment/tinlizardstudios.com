@@ -5,11 +5,6 @@ main {
     flex-wrap: wrap;
 }
 
-main .text p {
-    margin-bottom: 35px;
-    max-width: 400px;
-}
-
 main .text .socials {
     display: flex;
     justify-content: space-around;
