@@ -3,7 +3,7 @@ function sendMail() {
 
     let params = {
         subject: document.getElementById("subject").value,
-        date: "hi",
+        date: (dateNow.getDate() + "/" + dateNow.getMonth() + "/" + dateNow.getFullYear()).toString(),
         para: document.getElementById("para").value
     };
 
