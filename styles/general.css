@@ -108,6 +108,16 @@ main p {
     font-weight: 500;
 }
 
+.developer {
+    background-color: var(--colour1);
+    font-size: 1rem;
+}
+
+.developer a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
 @media (max-width: 750px) {
     main {
         font-size: 0.75rem;
