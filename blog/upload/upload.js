@@ -1,6 +1,9 @@
 function sendMail() {
+    const dateNow = new Date();
+
     let params = {
         subject: document.getElementById("subject").value,
+        date: dateNow.getDate() + "/" + dateNow.getMonth() + "/" + dateNow.getFullYear(),
         para: document.getElementById("para").value
     };
 
