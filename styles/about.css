@@ -18,3 +18,15 @@ main .image {
 
     overflow: hidden;
 }
+
+main .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    transition: all 0.25s;
+}
+
+main .image img:hover {
+    scale: 1.1;
+}
