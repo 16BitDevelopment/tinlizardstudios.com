@@ -20,17 +20,21 @@ formEl.onsubmit = (function(e) {
         para: paraInput.value,
     };
 
+    submitGroup.classList.add("loading");
+    submitGroup.classList.remove("sent");
+    submitGroup.classList.remove("error");
+
     emailjs.send("service_ffh1rdf", "template_6su3fl4", params).then(
         (response) => {
             submitGroup.classList.add("sent");
-            document.body.classList.add("submitted");
+            submitGroup.classList.remove("loading");
 
             paraInput.value = "";
             subjectInput.value = "";
         },
         (error) => {
             submitGroup.classList.add("error");
-            document.body.classList.add("submitted");
+            submitGroup.classList.remove("loading");
 
             paraInput.value = "";
             subjectInput.value = "";

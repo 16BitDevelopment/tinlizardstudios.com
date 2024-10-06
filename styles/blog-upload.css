@@ -1,7 +1,3 @@
-body.submitted {
-    pointer-events: none;
-}
-
 main {
     margin-top: 0;
 
@@ -70,7 +66,40 @@ form .form-submit-group button:hover {
 
 form .form-submit-group .msg {
     display: none;
-    font-size: 1rem;
+    font-size: 1em;
+}
+
+form .form-submit-group .loading {
+    font-size: 1em;
+
+    display: none;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+
+    padding-right: 10px;
+}
+
+form .form-submit-group .loading .load-bar {
+    height: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    position: relative;
+}
+
+form .form-submit-group .loading .load-bar .dot {
+    height: 100%;
+    aspect-ratio: 1;
+
+    background-color: var(--colour5);
+
+    border-radius: 999px;
+
+    animation: dot-load ease-in-out 0.75s infinite;
+    animation-delay: var(--delay);
 }
 
 form .form-submit-group .sent {
@@ -82,10 +111,25 @@ form .form-submit-group .error {
     color: red;
 }
 
+form .form-submit-group.loading .loading {
+    display: flex;
+}
+
 form .form-submit-group.sent .sent {
     display: block;
 }
 
 form .form-submit-group.error .error {
     display: block;
+}
+
+@keyframes dot-load {
+    from,
+    to {
+        translate: 0 -5px;
+    }
+
+    50% {
+        translate: 0 5px;
+    }
 }
