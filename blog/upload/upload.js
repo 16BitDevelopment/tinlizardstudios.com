@@ -17,21 +17,23 @@ formEl.onsubmit = (function(e) {
     let params = {
         subject: subjectInput.value,
         date: (dateNow.getDate() + "/" + dateNow.getMonth() + "/" + dateNow.getFullYear()).toString(),
-        para: paraInput.value
+        para: paraInput.value,
     };
 
     emailjs.send("service_ffh1rdf", "template_6su3fl4", params).then(
         (response) => {
             submitGroup.classList.add("sent");
+            document.body.classList.add("submitted");
 
-            paraInput.value == "";
-            subjectInput.value == "";
+            paraInput.value = "";
+            subjectInput.value = "";
         },
         (error) => {
             submitGroup.classList.add("error");
+            document.body.classList.add("submitted");
 
-            paraInput.value == "";
-            subjectInput.value == "";
+            paraInput.value = "";
+            subjectInput.value = "";
         }
     );
 });

@@ -1,3 +1,7 @@
+body.submitted {
+    pointer-events: none;
+}
+
 main {
     margin-top: 0;
 
@@ -62,10 +66,6 @@ form .form-submit-group button {
 form .form-submit-group button:hover {
     background-color: var(--colour5);
     color: var(--colour1);
-}
-
-form .form-submit-group.sent {
-    pointer-events: none;
 }
 
 form .form-submit-group .msg {
