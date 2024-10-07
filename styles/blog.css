@@ -49,6 +49,8 @@ main .feed .post {
 
 main .feed .post h1 {
     font-size: 3rem;
+    
+    margin: 0;
 }
 
 main .feed .post h2 {
@@ -57,6 +59,11 @@ main .feed .post h2 {
 
 main .feed .post p {
     font-size: 1rem;
+    margin-top: 10px;
+}
+
+main .feed .post em {
+    font-family: serif;
 }
 
 main .feed .post .preview {

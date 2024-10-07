@@ -41,3 +41,21 @@ formEl.onsubmit = (function(e) {
         }
     );
 });
+
+document.getElementById('images').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+
+    if (file && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+            const image = document.getElementById('imagePreview');
+            image.src = e.target.result;
+            image.style.display = 'block'; // Show the image
+        };
+        
+        reader.readAsDataURL(file); // Convert the file to a data URL
+    } else {
+        alert('Please upload a valid image file.');
+    }
+});
