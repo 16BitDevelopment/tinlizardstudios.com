@@ -12,6 +12,8 @@ main .gallery .painting {
     position: relative;
 
     border-radius: 10px;
+
+    cursor: pointer;
 }
 
 main .gallery .painting.fullscreen {
@@ -20,18 +22,26 @@ main .gallery .painting.fullscreen {
     height: calc(100% - 100px);
 
     padding: 50px;
+    padding-right: 350px;
 
-    background-color: #00000080;
+    background-color: #000000bf;
 
     border-radius: unset;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 25px;
+
+    cursor: default;
 
     z-index: 999;
 
     animation: show 0.5s forwards;
+}
+
+main .gallery.all .painting.fullscreen {
+    padding: 50px;
 }
 
 main .gallery .painting .close i {
@@ -45,6 +55,8 @@ main .gallery .painting .close i {
     color: var(--colour1);
 
     pointer-events: all;
+
+    cursor: pointer;
 
     transition: all 0.25s;
 }
@@ -107,6 +119,31 @@ main .gallery .painting.fullscreen:hover img {
     scale: 1;
 }
 
+main .gallery .painting .info {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 300px;
+
+    padding: 5px 10px;
+
+    color: var(--colour1);
+    background-color: #00000080;
+
+    margin-bottom: auto;
+
+    display: none;
+}
+
+main .gallery .painting .info p,
+main .gallery .painting .info b {
+    color: inherit;
+}
+
+main .gallery .painting.fullscreen .info {
+    display: block;
+}
+
 main .available h1 {
     margin-top: 100px;
 }
@@ -114,6 +151,16 @@ main .available h1 {
 @media (max-width: 1000px) {
     main .gallery .painting {
         height: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    main .gallery .painting.fullscreen {
+        padding: 50px;
+    }
+
+    main .gallery .painting.fullscreen .info {
+        width: unset;
     }
 }
 

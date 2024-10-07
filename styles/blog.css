@@ -32,6 +32,7 @@ main .feed .empty-text {
 
 main .feed .empty-text h2 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 main .feed .empty-text i {
