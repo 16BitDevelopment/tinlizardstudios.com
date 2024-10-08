@@ -31,12 +31,12 @@ main .feed .empty-text {
 }
 
 main .feed .empty-text h2 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     text-align: center;
 }
 
 main .feed .empty-text i {
-    font-size: 5rem;
+    font-size: 5em;
 }
 
 main .feed .post {
@@ -48,17 +48,17 @@ main .feed .post {
 }
 
 main .feed .post h1 {
-    font-size: 3rem;
+    font-size: 3em;
     
     margin: 0;
 }
 
 main .feed .post h2 {
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 main .feed .post p {
-    font-size: 1rem;
+    font-size: 1em;
     margin-top: 10px;
 }
 
