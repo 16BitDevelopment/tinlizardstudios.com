@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+}
+
 main p {
     margin-bottom: 25px;
 }
@@ -27,9 +31,4 @@ main a::after {
 
 main a:hover::after {
     width: 100%;
-}
-
-.bottom {
-    position: absolute;
-    bottom: 0;
 }

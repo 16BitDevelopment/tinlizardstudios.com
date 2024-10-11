@@ -79,7 +79,7 @@ main p {
     font-size: 1.25em;
 }
 
-.bottom {
+footer {
     width: 100%;
     height: 150px;
     background-color: var(--colour1);
@@ -89,22 +89,22 @@ main p {
     align-items: center;
 }
 
-.bottom .socials {
+footer .socials {
     display: flex;
     gap: 20px;
 }
 
-.bottom .socials i {
+footer .socials i {
     font-size: 1.5rem;
 
     transition: all 0.25s;
 }
 
-.bottom .socials i:hover {
+footer .socials i:hover {
     scale: 1.2;
 }
 
-.bottom .copyright {
+footer .copyright {
     font-weight: 500;
 }
 
