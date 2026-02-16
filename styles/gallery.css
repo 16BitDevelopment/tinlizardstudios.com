@@ -146,6 +146,11 @@ main .gallery .painting.fullscreen .info {
 
 main .available h1 {
     margin-top: 100px;
+    margin-bottom: 0;
+}
+
+main .available > p {
+    margin-bottom: 50px;
 }
 
 @media (max-width: 1000px) {
